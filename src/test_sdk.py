@@ -1,16 +1,15 @@
-print("Loaded test_sdk.py")
-
-import asyncio
-from claude_agent_sdk import query, ClaudeAgentOptions
-
 async def main():
     print("Starting SDK test...")
-    async for message in query(
-        prompt="Say hello.",
-        options=ClaudeAgentOptions(allowed_tools=[]),
-    ):
-        print("Received message:", message)
-
-
-if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        async for message in query(
+            prompt="Say hello.",
+            options=ClaudeAgentOptions(allowed_tools=[]),
+        ):
+            print("Received message:", message)
+    except Exception as e:
+        print("\nSDK raised an exception:")
+        print(e)
+        print(
+            "\nHint: If you see 'Not logged in · Please run /login', "
+            "set CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY in your .env."
+        )
