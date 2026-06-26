@@ -1,3 +1,1 @@
-pyairtable
-python-dotenv
-claude-agent-sdk
+# Package marker, no code needed here.
