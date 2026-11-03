@@ -1,0 +1,28 @@
+{
+  "entity_id": "fdn-wellcome-trust",
+  "entity_type": "Foundation",
+  "name": "Wellcome Trust",
+  "country": "United Kingdom",
+  "priority_tier": "C",
+  "total_score": 3,
+  "capacity": 2,
+  "programmatic_fit": 1,
+  "strategic_relevance": 0,
+  "status_change": "New",
+  "why_them": "Wellcome is the UK's largest charitable grantmaker. As of 30 September 2025 it had 2,723 active grants worth £7.3bn, and it has committed £16bn to research over the decade to 2032 ([funding data 2024](https://wellcome.org/research-funding/funding-portfolio/funding-data-2024), [Third Sector](https://www.thirdsector.co.uk/uks-largest-grantmaker-reports-2bn-rise-value-its-investment-portfolio/finance/article/1945006)). Its focus is health research, not youth STEM outreach. The only public-engagement scheme I found, Research Enrichment – Public Engagement, is closed. It last ran in May 2022, and it was open only to current Wellcome-funded researchers, not to charities ([Wellcome scheme page](https://wellcome.org/research-funding/schemes/research-enrichment-public-engagement)). I found no open grant scheme for the Nonprofit. The only education-related evidence is a 2018 joint round with the Education Endowment Foundation (EEF), which is older than 3 years and so weak ([Newcastle University blog](https://blogs.ncl.ac.uk/icmresearchfunding/2018/02)). Wellcome is high-capacity but a low-probability prospect, so the likeliest route is indirect, for example through a Wellcome-funded university researcher.",
+  "to_verify": [
+    "Check partner list",
+    "Check wellcome.org for any current open schemes in education, youth or public engagement. I did not review the full scheme list, and my search results were mostly 2008-2018.",
+    "Check the 2024/25 annual report for current education or young-people priorities and charitable spend. I did not open it, and the 2024/25 spend figure was not found.",
+    "Confirm whether the Nonprofit could be a public-engagement partner to Wellcome-funded researchers",
+    "Check for a named Wellcome engagement or partnerships contact",
+    "Check whether Wellcome has made any education or youth grants in the last 3 years, for example on 360Giving GrantNav"
+  ],
+  "source_links": [
+    "https://wellcome.org/research-funding/schemes/research-enrichment-public-engagement",
+    "https://wellcome.org/research-funding/funding-portfolio/funding-data-2024",
+    "https://www.thirdsector.co.uk/uks-largest-grantmaker-reports-2bn-rise-value-its-investment-portfolio/finance/article/1945006",
+    "https://blogs.ncl.ac.uk/icmresearchfunding/2018/02"
+  ],
+  "last_refreshed_date": "2026-11-03"
+}

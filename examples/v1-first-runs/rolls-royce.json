@@ -1,0 +1,19 @@
+{
+  "entity_id": "rolls-royce-holdings-plc-gb",
+  "entity_type": "Corporate",
+  "name": "Rolls-Royce Holdings plc",
+  "country": "United Kingdom",
+  "priority_tier": "Excluded",
+  "total_score": 5,
+  "status_change": "New - Excluded (sector rule: defence)",
+  "why_them": "EXCLUDED under the defence sector rule, so do not pursue. Rolls-Royce has a large Defence division. Its 2025 annual report shows Defence underlying revenue of £4,772m out of £20,059m group underlying revenue, about 24% (my calculation, not a figure the report states). The Defence division covers Submarines, Combat, Naval, Transport and Helicopters. Scores if the exclusion were ignored: Capacity 2, Programmatic Fit 2, Strategic Relevance 1. Capacity is 2 because of group revenue above £20bn. Programmatic Fit is 2 because the company has a global goal of inspiring 25 million people by 2030, and STEM is the largest share of its community giving. It runs the Rolls-Royce Schools Prize for Science & Technology, which has a £5,000 overall prize. It has about 1,400 STEM Ambassadors, a Discovery Education primary schools partnership, and Teach First sponsorship. Strategic Relevance is 1 because its giving appears to be run in-house, through its own programmes and existing partners, rather than through open external grants. These figures are self-reported by the company and partners. I did not find a current annual giving total or a formal external STEM grants programme. I did not check the Nonprofit's annual reports, so I have not confirmed whether Rolls-Royce is an existing partner.",
+  "source_links": [
+    "https://www.rolls-royce.com/~/media/Files/R/Rolls-Royce/documents/annual-report/2026/2025-annual-report.pdf",
+    "https://www.rolls-royce.com/country-sites/sea/community.aspx",
+    "https://careers.rolls-royce.com/united-kingdom/stem",
+    "https://www.discoveryeducation.co.uk/details/press-releases/rolls-royce-and-discovery-education-launch-pioneering-partnership-to-bring-stem-learning-to-derbyshire-primary-schools/",
+    "https://manufacturingmanagement.co.uk/content/news/rolls-royce-supports-teach-first",
+    "https://www.hethersettacademy.org/107/news/post/36/hethersett-academy-are-finalists-of-the-rolls-royce-schools-prize-for-science-amp-technology"
+  ],
+  "last_refreshed_date": "2026-11-03"
+}

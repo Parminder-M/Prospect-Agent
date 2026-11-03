@@ -1,0 +1,22 @@
+{
+  "entity_id": "corp-rolls-royce-holdings",
+  "entity_type": "Corporate",
+  "name": "Rolls-Royce Holdings plc",
+  "country": "United Kingdom",
+  "priority_tier": "Excluded",
+  "total_score": 0,
+  "capacity": 0,
+  "programmatic_fit": 0,
+  "strategic_relevance": 0,
+  "status_change": "Excluded",
+  "why_them": "Excluded under the defence sector rule. Rolls-Royce has a material Defence division, which reported 2025 underlying revenue of £4,772m out of group underlying revenue of £20,059m, about 24% (https://www.rolls-royce.com/~/media/Files/R/Rolls-Royce/documents/annual-report/2026/2025-annual-report.pdf). Defence covers combat, submarines, naval and transport. The company would otherwise be a large corporate with capacity. I did not review its STEM or education programmes or grant routes, because the exclusion applies first.",
+  "to_verify": [
+    "Check partner list",
+    "Confirm the exclusion with the team if the defence rule should not apply to a division of this size (about 24% of group revenue)"
+  ],
+  "source_links": [
+    "https://www.rolls-royce.com/~/media/Files/R/Rolls-Royce/documents/annual-report/2026/2025-annual-report.pdf",
+    "https://www.rolls-royce.com/investors/results-reports-and-presentations/financial-results/rr-holdings-plc-2025-full-year-results.aspx"
+  ],
+  "last_refreshed_date": "2026-11-03"
+}

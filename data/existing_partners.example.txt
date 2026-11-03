@@ -1,0 +1,3 @@
+# Copy to data/existing_partners.txt (not committed) and list the Nonprofit's current partners, one per line.
+Example Partner Ltd
+Another Foundation

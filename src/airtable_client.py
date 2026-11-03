@@ -1,11 +1,9 @@
-import os
+"""Writes scored prospects to Airtable (not yet wired into the main run)."""
+from typing import Any, Dict
+
 import requests
-from typing import Dict, Any
 
-
-AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
-AIRTABLE_BASE_ID = os.getenv("AIRTABLE_BASE_ID")
-AIRTABLE_TABLE_NAME = os.getenv("AIRTABLE_TABLE_NAME")
+from .config import AIRTABLE_API_KEY, AIRTABLE_BASE_ID, AIRTABLE_TABLE_NAME
 
 
 def _get_airtable_url() -> str:
