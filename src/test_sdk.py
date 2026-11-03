@@ -1,15 +1,21 @@
-async def main():
+"""Smoke test: checks the Claude Agent SDK is installed and authenticated.
+
+Usage:
+    python -m src.test_sdk
+"""
+import asyncio
+
+from claude_agent_sdk import ClaudeAgentOptions, query
+
+from .config import require_claude_auth
+
+
+async def main() -> None:
+    require_claude_auth()
     print("Starting SDK test...")
-    try:
-        async for message in query(
-            prompt="Say hello.",
-            options=ClaudeAgentOptions(allowed_tools=[]),
-        ):
-            print("Received message:", message)
-    except Exception as e:
-        print("\nSDK raised an exception:")
-        print(e)
-        print(
-            "\nHint: If you see 'Not logged in · Please run /login', "
-            "set CLAUDE_CODE_OAUTH_TOKEN or ANTHROPIC_API_KEY in your .env."
-        )
+    async for message in query(prompt="Say hello.", options=ClaudeAgentOptions(allowed_tools=[])):
+        print("Received message:", message)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

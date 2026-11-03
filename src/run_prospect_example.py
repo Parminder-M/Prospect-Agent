@@ -1,20 +1,24 @@
-from datetime import date
+"""Research one prospect and print the scored record.
+
+Usage:
+    python -m src.run_prospect_example "Sage Group plc"
+"""
+import json
+import sys
+
 from .agent_client import run_task
 
-def main():
+
+def main() -> None:
+    name = sys.argv[1] if len(sys.argv) > 1 else "Sage Group plc"
     prompt = (
-        "Research Sage Group plc as a potential corporate funder. "
+        f"Research {name} as a potential funder. "
         "Check their CSR/foundation pages and any STEM education grants. "
-        "Return a single Airtable-ready JSON record following the PRD schema."
+        "Return a single Airtable-ready JSON record following the schema."
     )
-
     result = run_task(prompt)
+    print(json.dumps(result, indent=2) if not isinstance(result, str) else result)
 
-    print("[FINAL RESULT JSON]")
-    print(result)
-
-    # Later, you will transform `result` into Airtable rows and call upsert_records(...)
-    # For now, we just print to see the shape.
 
 if __name__ == "__main__":
     main()

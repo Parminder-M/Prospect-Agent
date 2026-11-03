@@ -1,4 +1,0 @@
-from .config import ANTHROPIC_API_KEY, CLAUDE_PROJECT_ID
-
-print("ANTHROPIC_API_KEY starts with:", ANTHROPIC_API_KEY[:6], "...")
-print("CLAUDE_PROJECT_ID:", CLAUDE_PROJECT_ID)
