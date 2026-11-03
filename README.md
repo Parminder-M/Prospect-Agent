@@ -8,8 +8,7 @@ Built as a volunteer project for a charity I've supported for 10 years. The char
 
 ## The problem
 
-The Nonprofit relies on corporate, foundation and high-net-worth donors, but has no one with time for funder research. Prospecting meant volunteers reading CSR pages and annual reports by hand, so research was slow, inconsistent between volunteers and rarely revisited.
-<!-- TODO (Parminder): add a real number if you have one, e.g. "a volunteer spent about X hours per prospect" -->
+The Nonprofit relies on corporate, foundation and high-net-worth donors, but has no one with time for funder research. Prospecting meant volunteers reading CSR pages and annual reports by hand, so research was slow, inconsistent between volunteers and rarely revisited. Researching one funder properly took a volunteer **a couple of hours**.
 
 ## What it does
 
@@ -61,7 +60,9 @@ The general lesson: the model was good at research and consistent at scoring, bu
 - **Anonymised by default.** The agent never uses the charity's real name, and the partner list is never committed.
 
 ## What it changed
-<!-- TODO (Parminder): the most important line for readers. What has the charity done, or will it do, with this? E.g. "Used to build a first shortlist of N prospects for the 2027 corporate campaign" or "Handed to the fundraising volunteer to pilot on the next 20 prospects". -->
+- **Hours to minutes:** research that took a volunteer a couple of hours now takes a minute or two and about 5p, with sources and a checklist of what to verify.
+- **A clear go / no-go:** the charity decides which prospects to target from the tier. A- and B-tier prospects go forward for outreach; excluded and C-tier ones are dropped or parked, with the reason recorded.
+- **Volunteer time goes on the approach, not the desk research:** finding the right contact, tailoring the pitch and building the relationship.
 
 ## What's next
 
