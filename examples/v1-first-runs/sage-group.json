@@ -1,0 +1,19 @@
+{
+  "entity_id": "corp-sage-group-plc",
+  "entity_type": "Corporate",
+  "name": "The Sage Group plc",
+  "country": "United Kingdom",
+  "priority_tier": "Tier 1",
+  "total_score": 5,
+  "status_change": "New prospect. The Nonprofit's annual reports were not available to check for an existing partnership, so confirm that before outreach. Sage's sector (software) is not excluded.",
+  "why_them": "Capacity 2/2: Sage reported FY25 underlying revenue of £2,513m and underlying operating profit of £600m. Third-party aggregators put its market cap at about £7.7bn in July 2026. Programmatic fit 2/2: in 2022 Sage committed £1.4m over three years to digital skills and STEM for young people in North East England, aiming to reach 90,000 young people. The partners were the Newcastle United Foundation, the IET (FIRST LEGO League for about 14,000 pupils in deprived areas) and Newcastle University's National Innovation Centre for Data. Sage also backs Teens in AI. Strategic relevance 1/2: Sage runs a Sage Foundation, which reports 1.4m volunteer hours and over $5m raised for local causes over ten years. However, I found no open youth-STEM grant programme. Its Sage Impact Entrepreneurship grants are aimed at founders, not students. The most detailed STEM figures date from 2022, and its STEM giving already goes through established partners. A pitch would probably need to fit those partnerships, volunteering or in-kind support, or come through the Sage Foundation.",
+  "source_links": [
+    "https://www.sage.com/company/sage_foundation",
+    "https://www.sage.com/en-gb/news/press-releases/2022/02/sage-investment-in-north-east-digital-skills-gap-hailed-transformational-by-treasury/",
+    "https://www.intelligentcio.com/eu/2022/03/07/sages-1-4-million-transformative-investment-to-tackle-digital-skills-gap/",
+    "https://www.sage.com/investors/investor-downloads/press-releases/2022/02/sage-investment-in-the-north-east-to-tackle-critical-digital-skills-gap/",
+    "https://www.redmayne.co.uk/stockbroking/sage-group",
+    "https://kalkinemedia.com/ca/companies/lon-sge"
+  ],
+  "last_refreshed_date": "2026-11-03"
+}

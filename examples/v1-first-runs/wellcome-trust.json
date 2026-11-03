@@ -1,0 +1,19 @@
+{
+  "entity_id": "GB-CHC-210183",
+  "entity_type": "Foundation",
+  "name": "Wellcome Trust",
+  "country": "United Kingdom",
+  "priority_tier": "B",
+  "total_score": 4,
+  "status_change": "New - needs verification",
+  "why_them": "Capacity (2/2): Wellcome made 711 grant awards worth £1.3bn in 2024/25 and has an active portfolio of 2,723 grants worth £7.3bn. Charity Commission records show £1.63bn expenditure for the year to 30 Sep 2024. Programmatic fit (1/2): Wellcome has a track record of funding youth science engagement. Examples are the Curiosity partnership with BBC Children in Need for disadvantaged children, Science Learning+ for informal science learning, and a £30m science centres fund. Curiosity is now closed. The sources I found are mostly from 2009 to 2018, so I could not confirm any open STEM-education scheme that suits the Nonprofit. Strategic relevance (1/2): Past youth STEM work fits the Nonprofit's mission. Its current priorities are research-led, so a youth outreach grant is not a clear match. Not checked: whether Wellcome is an existing partner of the Nonprofit, because the Nonprofit's annual reports were not available to me. Sector exclusions (defence, gambling, tobacco) do not apply to a health-research charity. I did not review Wellcome's CSR pages directly. This record is based on search results only. Before outreach, check wellcome.org for current schemes and check the annual-report partner list.",
+  "source_links": [
+    "https://wellcome.org/research-funding/funding-portfolio/funding-data-2024",
+    "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/210183/financial-history",
+    "https://grantnav.threesixtygiving.org/grant/360G-Wellcome-209280_Z_17_Z",
+    "https://wellcome.org/research-funding/schemes/curiosity-closed",
+    "https://wellcome.org/press-release/science-learning-exploring-impact-informal-science-learning",
+    "https://wellcome.org/press-release/%C2%A330-million-fund-bring-new-life-science-centres"
+  ],
+  "last_refreshed_date": "2026-11-03"
+}
