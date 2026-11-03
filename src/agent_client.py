@@ -1,5 +1,6 @@
 """Runs the prospecting agent via the Claude Agent SDK."""
 import asyncio
+import os
 import json
 from typing import Any, Dict, List, Union
 
@@ -23,11 +24,24 @@ Rules:
 """.strip()
 
 
+RESEARCH_TOOLS = ["WebSearch", "WebFetch"]
+
+# Cost controls, overridable in .env:
+# - a mid-tier model is plenty for "read pages, score against a rubric"
+# - a hard spend cap per prospect stops a runaway research loop
+MODEL = os.getenv("PROSPECT_MODEL", "sonnet")
+MAX_BUDGET_USD = float(os.getenv("PROSPECT_MAX_BUDGET_USD", "0.50"))
+
+
 async def _run_query(user_prompt: str) -> str:
     options = ClaudeAgentOptions(
         system_prompt=SYSTEM_PROMPT,
-        allowed_tools=["WebSearch", "WebFetch"],  # research only: no file or shell access
-        max_turns=20,
+        model=MODEL,
+        tools=RESEARCH_TOOLS,          # load only the research tools (cuts prompt overhead)
+        allowed_tools=RESEARCH_TOOLS,  # and auto-approve them: no file or shell access
+        setting_sources=[],            # ignore any local Claude Code settings or CLAUDE.md
+        max_turns=15,
+        max_budget_usd=MAX_BUDGET_USD,
     )
     final_text = ""
     async for message in query(prompt=user_prompt, options=options):
