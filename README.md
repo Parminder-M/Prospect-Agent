@@ -4,7 +4,7 @@ An AI research agent that helps a small STEM youth charity find and prioritise n
 
 Built as a volunteer project for a charity I've supported for 10 years. The charity is referred to as "the Nonprofit" throughout.
 
-**Status:** working prototype. Piloted on three real prospects in November 2026 at about **$0.06 per prospect** and a minute or two each. Sample outputs are in [`examples/`](examples/).
+**Status:** working prototype. Piloted on three real prospects in November 2026: about **$0.05 per prospect** and a minute or two each, with every record passing its own schema check. Sample outputs are in [`examples/`](examples/), before and after the fixes.
 
 ## The problem
 
@@ -25,24 +25,28 @@ For each prospect, the agent:
 5. **Returns** one JSON record with a short "why them", a source for every claim, and a `to_verify` list for the volunteer.
 6. **Checks its own output** against the schema and tier rules, and flags anything that breaks them.
 
-## Pilot results (first runs, November 2026)
+## Pilot results (November 2026)
 
-| Prospect | Result | What it shows |
-|---|---|---|
-| Sage Group plc | Scored 5/6; strong STEM fit (£1.4m youth digital-skills programme) but no open grant scheme | Useful nuance: "fund through existing partnerships or the Sage Foundation, not a grant application" |
-| Rolls-Royce Holdings | **Excluded:** defence is about 24% of revenue | The exclusion rule works on a big STEM funder that looks attractive at first sight |
-| Wellcome Trust | B, 4/6; huge capacity, but youth schemes closed or old | Honest about weak, dated evidence instead of over-selling |
+The same three prospects, run before and after tightening the rules:
 
-Cost: about $0.06 per prospect on Sonnet, with a hard cap of $0.50.
+| Prospect | First run | After fixes | Why it changed |
+|---|---|---|---|
+| Sage Group plc | "Tier 1", 5/6 | **B**, 4/6 | No open funding route found, so it can't be A-tier |
+| Rolls-Royce Holdings | "Excluded", but scored 5/6 | **Excluded**, 0/6 | Defence is about 24% of revenue; the agent now checks exclusions first and stops (2 turns, $0.02) |
+| Wellcome Trust | B, 4/6 | **C**, 3/6 | Found that the only public-engagement scheme is closed and only for Wellcome-funded researchers; suggests an indirect route instead |
+
+After the fixes, all three records passed the validator. The second round cost **$0.14 for three prospects** on Sonnet, with a hard cap of $0.50 each. Outputs: [`examples/v1-first-runs`](examples/v1-first-runs/) and [`examples/v2-after-fixes`](examples/v2-after-fixes/).
 
 ## What I learned from the first runs
 
-Reading the first three outputs as a reviewer found four problems, all now fixed:
+Reading the first outputs as a reviewer found five problems; four are fixed:
 
 1. **Confident priority on thin evidence.** Sage was rated "Tier 1" although the agent found no open funding route. **Fix:** tiers follow fixed thresholds, and A-tier needs a live route.
 2. **Format drift.** The three runs used three tier formats ("Tier 1", "B", "Excluded"), and an excluded prospect still scored 5. **Fix:** strict allowed values, plus a validator that checks every record. It flagged all three first runs.
 3. **Weak sources.** Financial figures came from stock-market aggregators rather than the company's own report. **Fix:** a primary-sources-first rule, with evidence older than three years treated as weak.
 4. **A rule it couldn't follow.** "Exclude existing partners" was impossible without the partner list. **Fix:** an optional, private partner list passed in as input; without it, the agent adds "check partner list" to `to_verify` instead of guessing.
+
+5. **Run-to-run variance.** Sage's programmatic fit dropped from 2 to 1 between runs, because the second run didn't find the 2022 programme the first one did. Same prospect, different evidence, different score. **Not fixed yet:** this is why the next step is an eval set that runs each prospect several times and measures how stable the tiers are.
 
 The general lesson: the model was good at research and consistent at scoring, but loose at overall judgement and formatting. Explicit rules plus an automatic check did more than a longer prompt.
 
@@ -62,7 +66,7 @@ The general lesson: the model was good at research and consistent at scoring, bu
 ## What's next
 
 - Batch runs from a list, writing straight to Airtable (the client is written in `src/airtable_client.py`).
-- A small eval set: about 10 prospects with tiers agreed by a volunteer, to measure how often the agent agrees.
+- A small eval set: about 10 prospects with tiers agreed by a volunteer, each run three times, to measure agreement and stability.
 - A scheduled monthly refresh, so A- and B-tier prospects stay current.
 
 ## Run it

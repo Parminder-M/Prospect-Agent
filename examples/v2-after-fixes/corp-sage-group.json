@@ -1,0 +1,29 @@
+{
+  "entity_id": "corp-sage-group",
+  "entity_type": "Corporate",
+  "name": "Sage Group plc",
+  "country": "United Kingdom",
+  "priority_tier": "B",
+  "total_score": 4,
+  "capacity": 2,
+  "programmatic_fit": 1,
+  "strategic_relevance": 1,
+  "status_change": "New",
+  "why_them": "Sage is a large FTSE-listed software company. Its Sage Foundation says it has raised about $5M globally over 10 years, and in 2024–25 it narrowed its focus to underserved small businesses and to communities and young people, including next-gen digital skills such as AI (https://www.sage.com/en-gb/company/digital-newsroom/2025/07/02/sage-foundation-celebrates-10-years-of-impact-5-million-raised-and-1-3-million-hours-volunteered/; same content via https://www.cpapracticeadvisor.com/2025/07/22/sage-foundation-celebrates-10-years-of-impact-5-million-raised-and-1-3-million-hours-volunteered/165349/). Youth digital skills is a good fit, but the coverage did not mention STEM specifically. I found no open grant round or application route. Sage's foundation pages mention partnerships such as Teens in AI and FIRST LEGO League, and the only dated grant fund I found (Manchester Community Central, $5k–$35k) closed in 2017, so it counts as weak evidence. The Sage pages returned 403 errors, so I relied on a secondary source (CPA Practice Advisor) for the press release text.",
+  "to_verify": [
+    "Check partner list",
+    "Confirm whether the Sage Foundation has an open grant or application route for UK youth/STEM charities",
+    "Check the Sage Group annual report 2025 for community investment spend and sustainability section",
+    "Verify Teens in AI and FIRST LEGO League partnerships are current, and whether they are with the Nonprofit's competitors",
+    "Find a named contact on the Sage Foundation team",
+    "Confirm Sage has no defence, gambling or tobacco exposure (none seen)"
+  ],
+  "source_links": [
+    "https://www.sage.com/en-gb/company/digital-newsroom/2025/07/02/sage-foundation-celebrates-10-years-of-impact-5-million-raised-and-1-3-million-hours-volunteered/",
+    "https://www.sage.com/en-gb/company/sage-foundation/",
+    "https://sage.com/en-gb/-/media/files/investors/documents/pdf/annual%20report/sage-annual-report-2024.pdf",
+    "https://www.cpapracticeadvisor.com/2025/07/22/sage-foundation-celebrates-10-years-of-impact-5-million-raised-and-1-3-million-hours-volunteered/165349/",
+    "https://manchestercommunitycentral.org/node/37972"
+  ],
+  "last_refreshed_date": "2026-11-03"
+}
